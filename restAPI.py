@@ -28,7 +28,7 @@ def get_task(task_id):
     if task is None:
         return jsonify({'error': 'Task not found'}), 404
     return jsonify({'task': task})
-
+# Endpoint to create a new task1
 # Endpoint to create a new task
 @app.route('/tasks', methods=['POST'])
 def create_task():
